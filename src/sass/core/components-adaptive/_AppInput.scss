@@ -1,0 +1,18 @@
+
+@media screen and (max-width: 600px) {
+
+    .app-input__input {
+        font-family: "Montserrat", sans-serif;
+        //width: 100%;
+        //min-width: 100px;
+        padding: 10px 14px;
+        border-radius: 5px ;
+        border: 1px #c9c9c9 solid;
+        font-size: 14px;
+
+    }
+
+    .app-input__width {
+        min-width: 100%
+    }
+}

@@ -1,0 +1,32 @@
+.slider-view__input-size {
+    width: 70%;
+}
+.slider-view__products-item {
+    display: flex;
+    font-size: 13px;
+    color: #404040;
+    margin-bottom: 5px;
+    padding-left: 30px;
+
+    .del {
+        position: relative;
+        top: -5px;
+        width: 30px;
+        left: -14px;
+    }
+}
+.slider-view__products-btn {
+    padding: 10px 14px;
+    margin-bottom: 35px;
+    display: inline-block;
+}
+.slider-view__products {
+    margin-left: -8px;
+    width: 80%;
+}
+.slider-view__sale-content {
+    display: none;
+}
+.slider-view__sale-content.show {
+    display: block;
+}

@@ -1,0 +1,19 @@
+.checkbox {
+  font-size: 13px;
+  user-select: none;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+
+  input {
+    position: relative;
+    top: 2px;
+  }
+}
+
+.radio__wrap {
+
+}
+.checkboxes_inline {
+  display: inline-block;
+  margin: 28px 0 0 30px;
+}

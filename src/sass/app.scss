@@ -1,0 +1,55 @@
+@import "variables";
+@import "fonts";
+
+@import "base/base";
+@import "base/base-adaptive";
+//@import "transitions";
+@import "core/core";
+
+@import "modules/order/order";
+@import "modules/product/product";
+@import "modules/category/category";
+@import "modules/slider/slider";
+@import "modules/user/user";
+@import "modules/review/review";
+@import "modules/platform/platform";
+@import "modules/event/event";
+@import "modules/page/page";
+@import "modules/constructor/constructor";
+@import "modules/news/news";
+@import '~tippy.js/dist/tippy.css';
+
+
+.scheme-svg svg {
+  max-width: 100%;
+  max-height: 500px;
+  user-select: none;
+}
+
+.scheme-svg svg text, .scheme-svg svg tspan {
+  pointer-events: none;
+}
+
+.scheme-svg ._sector {
+  cursor: pointer;
+}
+
+.place_row {
+  height: 20px;
+}
+
+.text_active{
+    cursor: pointer;
+}
+
+.scheme-svg ._sector.active {
+  path{
+    fill: #ff3434 !important;
+  }
+  rect{
+    fill: #ff3434 !important;
+  }
+  text tspan{
+    fill: #fff;
+  }
+}

@@ -1,0 +1,4 @@
+root = true
+
+[*.{js,vue}]
+max_line_length = 140

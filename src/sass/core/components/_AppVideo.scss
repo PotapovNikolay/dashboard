@@ -1,0 +1,29 @@
+.app-video__item {
+  max-width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  padding: 3px 25px 1px 10px;
+  color: #404040;
+  text-decoration: none;
+  font-size: 15px;
+  background: #ededed;
+  margin-right: 15px;
+  border-radius: 4px;
+
+  .app-images__del {
+    background: none;
+    height: 26px;
+    z-index: 999;
+    padding-top: 3px;
+    background: #ededed;
+  }
+}
+.app-video__input {
+  width: 40% !important;
+  margin-right: 15px;
+}
+.app-video__btn {
+  padding: 10px 14px;
+}

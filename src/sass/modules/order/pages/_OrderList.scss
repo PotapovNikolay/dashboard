@@ -1,0 +1,12 @@
+.order-list__manager-comment {
+  background: none;
+  resize: none;
+  border: none;
+  white-space: pre-line;
+}
+
+.order-list__manager-comment_allow-edit {
+  outline: 1px solid #313131;
+  padding: 3px;
+  cursor: text;
+}

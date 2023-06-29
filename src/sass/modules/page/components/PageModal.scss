@@ -1,0 +1,97 @@
+
+.app-page__modal_container_block button{
+
+  background-color: white;
+  height: 3rem;
+  width: 3rem;
+  padding: 0;
+  margin:0;
+  border-radius: 0.6rem;
+  border:0 solid;
+  cursor: pointer;
+  color: #118ab2;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.app-page__modal_container_block div{
+  margin-top:1rem;
+  text-align: center;
+
+}
+
+.app-page__modal_container_block{
+
+  cursor: pointer;
+  background-color: #e2e4ef;
+  width: 10rem;
+  height: 12rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.app-page__modal_container{
+
+  width: 100%;
+  display:grid;
+  place-items:center;
+  gap:1rem;
+  grid-template-columns : repeat(3, 10rem);
+  justify-content: center;
+  margin: 2rem 1rem;
+
+}
+
+.app-page__modal_front_help{
+  margin-top: 2rem;
+  font-size: medium;
+  color: #777777;
+}
+
+.app-page__modal_front_label{
+  margin-top: 3rem;
+  font-size: xx-large;
+
+}
+
+.app-page__closeModal {
+  cursor:pointer;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  border:0 solid ;
+  right: 5rem;
+  top: 5rem;
+  color: white;
+}
+
+.app-page__modal_back {
+  z-index: 100000;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-page__modal_front {
+  background-color: white;
+  width: 45%;
+
+  border-radius:0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}

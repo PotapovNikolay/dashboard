@@ -1,0 +1,105 @@
+.app-description-error {
+    .ql-toolbar {
+        border-top: 1px #ef476f solid;
+        border-right: 1px #ef476f solid;
+        border-left: 1px #ef476f solid;
+    }
+    .ql-container {
+        border: 1px #ef476f solid;
+    }
+
+    label{
+        color:#ef476f
+    }
+}
+
+.app-description-correct {
+    .ql-toolbar {
+        border-top: 1px #2ec4b6 solid;
+        border-right: 1px #2ec4b6 solid;
+        border-left: 1px #2ec4b6 solid;
+    }
+    .ql-container {
+        border: 1px #2ec4b6 solid;
+    }
+    label{
+        color:#2ec4b6
+    }
+}
+
+.ck-content {
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #ced4da !important;
+    min-height: 350px;
+    overflow: auto;
+    margin-top: -1px;
+}
+
+.ck-content {
+    color: #404040;
+
+    h2,
+    h3,
+    h4 {
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    h3,
+    h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        margin-bottom: 15px;
+    }
+
+    ul,
+    ol {
+        list-style: none;
+        margin: 20px 0;
+        padding-left: 20px;
+    }
+
+    li {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 20px;
+
+        &::before {
+            content: "";
+            width: 8px;
+            height: 7px;
+            display: inline-block;
+            border-radius: 50%;
+            background: #404040;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+    }
+    a {
+        color: $primaryColor !important;
+        cursor: pointer;
+
+        span {
+            color: $primaryColor !important;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

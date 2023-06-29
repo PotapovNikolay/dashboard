@@ -1,0 +1,23 @@
+.tab {
+  color: #666;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 15px;
+  border-left: 1px solid #ededed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+.tab_first {
+  margin-left: 15px;
+}
+.tab_primary {
+  color: #6496dc;
+}

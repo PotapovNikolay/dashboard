@@ -1,0 +1,14 @@
+.link {
+  font-size: 13px;
+  text-decoration: underline;
+  color: #333;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+.link_primary {
+  color: #D64C84;
+}

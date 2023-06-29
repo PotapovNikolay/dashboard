@@ -1,0 +1,59 @@
+@media screen and (max-width: 450px) {
+
+    .page__sideBar_window{
+
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 80%;
+        background-color: white;
+        min-height: 100%;
+        //width: 20%;
+        z-index: 10030;
+        padding: 1rem 0.5rem;
+        -webkit-box-shadow: 4px 0 8px 0 rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 4px 0 8px 0 rgba(34, 60, 80, 0.2);
+        box-shadow: 4px 0 8px 0 rgba(34, 60, 80, 0.2);
+    }
+
+    .page__sideBar_window_nav_item{
+
+        padding: 1rem;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s linear;
+
+        background-color: white;
+
+        flex-grow: 1;
+
+        border:0 solid
+    }
+
+    .page__sideBar_window_itemOfList{
+
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 1rem ;
+        cursor: pointer;
+        border: 0 solid;
+        text-align: start;
+        font-size: 14px;
+        font-weight: 500;
+        box-shadow: none;
+        transition: border-bottom, padding 0.25s linear;
+        width: 100%;
+        //cursor: pointer;
+        //padding:  0.7rem 0 0.7rem 0 ;
+        //font-size: 16px;
+        //
+        //transition: padding 0.2s linear;
+    }
+
+    .page__sideBar_window_itemOfList:hover{
+
+        padding: 0.8rem 0 0.8rem 1.5rem;
+    }
+}

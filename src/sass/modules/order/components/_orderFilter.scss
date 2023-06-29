@@ -1,0 +1,69 @@
+.order-filter {
+  border-bottom: 1px solid #ededed;
+  //max-height: 0;
+  //transition: all .3s;
+  //opacity: 0;
+  //visibility: hidden;
+  //overflow: hidden;
+}
+.order-filter__content {
+  padding: 15px 30px 20px 30px;
+  border-bottom: 1px solid #ededed;
+}
+.order-filter__id {
+  width: 92px;
+  padding: 10px 14px;
+}
+.order-filter_checkbox {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.order-filter__checkboxes {
+  margin-top: 23px;
+}
+.checkboxes-wrap {
+  border: 1px solid #ced4da;
+  height: 100%;
+  padding: 4px 5px 6px 18px;
+  border-radius: 0.25rem;
+}
+
+.order-filter.show_filter {
+  max-height: 400px;
+  opacity: 1;
+  visibility: visible;
+  overflow: initial;
+}
+.date_input {
+  padding: 10px 10px 10px 40px;
+  width: 150px;
+}
+.date-wrap {
+  position: relative;
+  margin-right: 5px;
+  display: inline-block;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.date_label {
+  font-size: 12px;
+  color: #666;
+  position: absolute;
+  top: 12px;
+  left: 14px;
+}
+.filter__btn {
+  padding: 11px 15px;
+  margin-top: 20px;
+}
+.order-filter__btn {
+  padding: 10px 14px;
+}
+.order-filter__btn-wrap {
+  padding-top: 20px;
+}

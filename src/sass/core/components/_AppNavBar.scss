@@ -1,0 +1,323 @@
+.app-navbar__tab_sign_container{
+
+    position: absolute;
+}
+
+.app-navbar__tab_text{
+
+    position: relative;
+}
+
+.app-navbar__tab_sign{
+    position: absolute;
+    right: -8px;
+    top: -4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+
+    &_negative{
+        background-color: #ef476f;
+    }
+
+    &_positive{
+        background-color: #2ec4b6;
+    }
+}
+
+.app-navbar__tab_sign_animate{
+    position: absolute;
+    right: -8px;
+    top: -4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+    &_negative{
+        background-color: #ef476f;
+    }
+
+    &_positive{
+        background-color: #2ec4b6;
+    }
+}
+
+.app-navbar__buttons_container{
+
+    display: flex; margin-left: auto;
+    margin-top: 0;
+}
+
+.app-navbar__container_button_with_text{
+
+    margin-left: auto;
+    padding-left: 1rem;
+}
+
+.app-navbar__journal-scroll::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: #7d808e;
+    border-radius: 10px;
+}
+
+.app-navbar__nav_padding{
+
+    padding: 0;
+}
+
+.app-navbar__journal-scroll::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: #53596b;
+    width: 10px;
+    border-radius: 10px;
+}
+.app-navbar__journal-scroll::-webkit-scrollbar-track {
+    /*background-color: rgb(24, 24, 27);*/
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+}
+.app-navbar__journal-scroll::-webkit-scrollbar {
+    //width: 6px;
+
+    height: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    //height: 90%;
+    background-color: #181819;
+
+}
+
+.app-navbar__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin: 0;
+    position: relative;
+    background-color: #2e3442;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+z-index: 10;
+    -webkit-box-shadow: 0px -6px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px -6px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px -6px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.app-navbar__group{
+
+    display: flex;
+    margin: 0 2rem;
+}
+
+.app-navbar__button_svg{
+
+    width: 25px;
+    height:25px;
+}
+
+.app-navbar__tabs{
+
+
+    flex-grow:1;
+    display: flex;
+    overflow: auto;
+    width: 10rem;
+    margin-top: 4px;
+
+}
+
+.app-navbar__tabs_subPageName{
+    display: none;
+}
+
+.app-navbar__tabs_container{
+
+    display: flex;
+}
+
+
+.app-navbar__tab {
+    position: relative;
+    display: flex;
+}
+.app-navbar__tabs_pageName{
+
+    font-size: 20px;
+    padding-right: 1rem;
+    color:white;
+    padding-bottom: 0;
+    padding-top: 0;
+    white-space: nowrap;
+}
+
+
+.app-navbar__tab_button{
+
+    font-size: 14px;
+
+    background-color: rgba(0,0,0,0);
+    border: 0 solid;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+
+    color: #c2c2c2;
+    padding: 0.2rem 0.6rem;
+    min-width: 8rem;
+    height:2.5rem;
+    border-radius: 0.3rem;
+    transition: all 0.3s linear;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    img{
+
+        margin-right: 0.5rem;
+        height: 20px;
+        width: 20px;
+        //filter: brightness(10%);
+    }
+
+    &:hover{
+        background-color: rgba(83,89,103,0.3);
+    }
+}
+
+.app-navbar__button_with_text{
+
+    background-color: #53596b;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color:white;
+    font-size: 14px;
+    border: 0 solid;
+    padding: 0.2rem 1.6rem 0.2rem 0.6rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    //margin: 0 0.5rem;
+    width: 9rem;
+    height:2.5rem;
+    -webkit-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.3);
+
+    transition: all 0.2s linear;
+
+    &:hover{
+
+        img{
+            animation: bounce 1s infinite;
+        }
+
+    }
+
+    span{
+        margin-left: 1rem;
+    }
+
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-10%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(10%);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+.app-navbar__tab_button:hover{
+
+    color: #ededed;
+    border-radius: 0.3rem;
+    -webkit-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s linear;
+
+}
+
+.app-navbar__tab_button_active {
+
+    font-size: 14px;
+    background-color: #53596b;
+    padding: 0.2rem 0.6rem;
+    border: 0 solid;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    color:white;
+    min-width: 8rem;
+    height:2.5rem;
+    transition: all 0.3s ease-in;
+    -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
+
+    img{
+
+        margin-right: 0.5rem;
+        height: 20px;
+        width: 20px;
+    }
+
+    &:hover{
+        background-color: #696f83;
+    }
+
+    &:focus{
+
+        .app-navbar__tab_text{
+           animation: slick 0.7s ;
+       }
+    .app-navbar__tab_sign{
+            animation: none;
+        }
+    }
+
+}
+
+@keyframes slick {
+    0% {
+        transform: translateY(-20%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(30%);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+    100% {
+        transform: translateY(0%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+}
+
+@keyframes ping {
+    75%, 100% {
+    transform: scale(3);
+    opacity: 0;
+    }
+}
+
+
+.app-navbar__save{
+
+    margin-top: auto;
+    bottom: 4rem;
+    left:10rem
+}

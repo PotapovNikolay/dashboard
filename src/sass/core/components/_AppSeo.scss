@@ -1,0 +1,27 @@
+%seoTextarea {
+  padding: 10px 14px;
+  resize: none;
+}
+.app-seo__comment {
+  @extend %seoTextarea;
+  width: 100%;
+  height: 181px;
+}
+.app-seo__left {
+  width: 50%;
+}
+.app-seo__right {
+  width: 50%;
+}
+.app-seo {
+  .input {
+    width: 100%;
+  }
+}
+.seo__group {
+  margin-bottom: 20px;
+}
+.app-seo__description {
+  @extend %seoTextarea;
+  height: 100px;
+}

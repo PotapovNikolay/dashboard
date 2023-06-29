@@ -1,0 +1,80 @@
+.app-debounce-select {
+  position: relative;
+  user-select: none;
+
+  &::after {
+    content: "";
+    //background: url('../../../website/assets/images/icons/arrows/down_black.svg') no-repeat;
+    background-size: 100%;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 14px;
+  }
+}
+
+// .quill.ql-error {
+//   .ql-toolbar {
+//     border-bottom: 1px solid red;
+//   }
+//   .ql-container {
+//     border-left: 1px solid red;
+//     border-right: 1px solid red;
+//     border-bottom: 1px solid red;
+//   }
+// }
+
+.app-debounce-select__current {
+  //width: 400px;
+  //padding: 9px 14px 8px 14px;
+  //width: 100%;
+  padding: 10px 14px;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  border: 1px solid #c2c2c2;
+  border-radius: 4px
+}
+.app-debounce-select__current.no-border {
+  border-radius: 4px 4px 4px 4px;
+}
+
+.app-select__dropdown {
+  position: absolute;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  background: #fff;
+  white-space: nowrap;
+  font-size: 13px;
+  top: 40px;
+  left: 0;
+  border: 1px solid #ededed;
+  //padding: 5px 10px;
+  max-height: 400px;
+  overflow: auto;
+  border-radius: 4px;
+  display: none;
+}
+.app-select__option {
+  padding: 10px 10px;
+  cursor: pointer;
+  color: #666;
+
+  &:hover {
+    color: darken($primaryColor, 10%);
+  }
+}
+
+.app-select__dropdown.show {
+  display: block;
+}
+
+@media screen and (max-width: 720px) {
+
+  .app-select__dropdown.show {
+    display: block;
+    padding: 0.5rem;
+  }
+}

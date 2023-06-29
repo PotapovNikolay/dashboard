@@ -1,0 +1,39 @@
+.page__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-bottom: 1px #c9c9c9 solid;
+    position: relative;
+
+}
+
+.page__nav_button_with_text{
+
+    background-color: #2e3442;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+    font-size: 14px;
+    border: 0 solid;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    width: 10rem;
+}
+
+.page__nav_group{
+
+    display: flex;
+    margin: 0 2rem;
+}
+
+.page__nav_button_svg{
+
+    width: 25px;
+    height:25px;
+}
+

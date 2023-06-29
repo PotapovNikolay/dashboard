@@ -1,0 +1,9 @@
+@import "pages/PlatformVariantView";
+@import "components/GeneratorSector";
+
+.scheme-svg {
+  //margin: 60px 0;
+}
+.scheme-svg ._sector.active:hover {
+  fill: #ffc600 !important;
+}

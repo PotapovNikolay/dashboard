@@ -1,0 +1,20 @@
+.category-sorter {
+  padding: 15px 0 0 30px;
+}
+.category-sorter__item {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #dcdcdc;
+  margin-top: -1px;
+  background: #fff;
+  font-size: 14px;
+  color: #5c5c5c;
+
+  &:hover {
+    color: #404040;
+  }
+}
+
+.category-sorter__item-current {
+  background: $primaryColor;
+}

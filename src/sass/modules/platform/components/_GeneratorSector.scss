@@ -1,0 +1,108 @@
+.generator-sector-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.generator-sector-mask_div {
+  overflow: auto;
+  height: 100vh;
+  padding: 60px 40px 60px 0;
+}
+.generator-sector {
+
+}
+
+.generator-sector-close{
+
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}
+
+.generator-sector-close button{
+
+  background-color: rgba(0,0,0,0);
+  border: 0 solid;
+  cursor: pointer;
+    font-size: 20px;
+}
+
+.generator-sector__input-place {
+  width: 200px;
+  padding: 4px 14px 2px 14px;
+}
+.generator-sector__input {
+  width: 300px !important;
+}
+.generator-sector__input-wrap {
+  position: relative;
+  display: inline-block;
+
+  .del {
+    position: absolute;
+    top: -1px;
+    right: -25px;
+    width: 24px;
+    height: 24px;
+  }
+}
+.generator-sector__place {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b0afaf;
+  display: inline-block;
+  background: #cfcfcf;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 21px;
+  user-select: none;
+}
+.generator-sector__place_has_price {
+  background: #d7a121;
+}
+.generator-sector__place_unavailable {
+  background: #fff;
+}
+.generator-sector__place_selected {
+  background: #84b0f5;
+}
+.generator-sector__number-row {
+  font-size: 11px;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #292929;
+  height: 23px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.number-row_offset {
+  margin-top: 1px;
+}
+.generator-sector__btn-wrap {
+  margin: 20px 0;
+  max-width: 1000px;
+
+  .btn {
+    margin: 0 10px 10px 0;
+  }
+}
+.generator-sector__checkboxes {
+  //border-bottom: 1px solid #8f8f8f;
+  //border-top: 1px solid #8f8f8f;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+.generator-sector__title {
+  border-bottom: 1px solid #cbcbcb;
+}

@@ -1,0 +1,27 @@
+@media screen and (min-width: 1080px) {
+
+    .app-page__plus{
+        margin: 2rem 0 2rem 0 ;
+        cursor: pointer;
+        color:white;
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        //background-color: #2d78ff;
+        background-color: #2e3442;
+        border-radius: 40px;
+        border: 0 solid #2e3442;
+        width: 14rem;
+        padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+        position: relative;
+
+        img{
+            width: 25px;
+            height: 25px;
+            right: 0.5rem;
+        }
+    }
+
+}

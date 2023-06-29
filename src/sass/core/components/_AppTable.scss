@@ -1,0 +1,258 @@
+
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    padding: 12px;
+  }
+  td:first-child {
+    padding: 12px 12px 12px 30px;
+  }
+}
+.table__title {
+  border-bottom: 1px solid #dee2e6;
+  padding: 20px 20px 15px 30px;
+  font-weight: 600;
+}
+
+.setting__table{
+  margin-bottom: 100px;
+}
+
+.setting__item{
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  user-select: none;
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    //background-image: url("../../../website/assets/images/icons/arrows/down_black.svg");
+    background-size: 14px;
+    width: 14px;
+    height: 6px;
+    right: 20px;
+    top: 25px;
+    transition: transform 0.2s;
+    background-repeat: no-repeat;
+  }
+
+  &.active::before{
+    transform: rotate(180deg);
+  }
+
+  &.active ~ .setting__group{
+    display: block;
+  }
+
+  &.active, &:hover{
+    background-color: #ddd;
+  }
+}
+
+.setting__group{
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+
+  & .order-list__manager-comment:last-child{
+    margin-bottom: 15px;
+  }
+}
+
+.unsaved .input{
+  border: 1px solid #e5c615;
+}
+
+.table__item {
+  cursor: pointer;
+  color: #383838;
+}
+
+.table__item_current{
+
+  cursor: pointer;
+  background: #e8ffde;
+  color: #383838;
+}
+
+.table__item_current:hover{
+
+  cursor: pointer;
+  background: #d1e7c6;
+  color: #383838;
+}
+
+.table__item:nth-child(odd) td {
+  cursor: pointer;
+  background: #e8f1ff;
+  color: #383838;
+}
+
+.table__item:nth-child(odd):hover td {
+  background: #f4f9ff;
+  color: #000;
+}
+
+.table__item:last-child {
+  border-bottom: none;
+}
+.table__title td {
+  padding: 20px 15px 15px 30px;
+  font-weight: bold;
+}
+.table td {
+  font-size: 14px;
+}
+.thead td {
+  font-weight: bold;
+}
+.tbody td {
+  font-size: 12px;
+  transition: all .2s;
+}
+//.tbody tr:nth-child(odd) td {
+//  background: #e8f1ff;
+//}
+//.tbody tr:hover {
+//  background: #f4f9ff;
+//  color: #000;
+//}
+.table__item:hover td {
+  background: #f4f9ff;
+  color: #000;
+}
+//.tbody tr:nth-child(odd):hover td {
+//  background: #f4f9ff;
+//  color: #000;
+//}
+.edit {
+  //background: url("/edit.svg") no-repeat;
+  background-size: 100%;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+%tableSortingIcons {
+  width: 8px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+.table-sorting {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+}
+.table-sorting__arrow-top {
+  @extend %tableSortingIcons;
+  //background: url("/arrow.svg") center no-repeat;
+  background-size: 100%;
+  bottom: 4px;
+  left: 0;
+  transform: rotate(180deg);
+}
+.table-sorting__arrow-down {
+  @extend %tableSortingIcons;
+  //background: url("/arrow.svg") center no-repeat;
+  background-size: 100%;
+  top: -5px;
+  left: 0;
+}
+.table-sorting__wrap {
+  cursor: pointer;
+}
+.table_arrow.active {
+  opacity: 1;
+}
+.table_arrow.hide {
+  opacity: 0;
+}
+
+.sorting_disabled {
+
+}
+.sorting_up {
+  .table-sorting__arrow-top {
+    display: block;
+  }
+  .table-sorting__arrow-down {
+    display: block;
+  }
+}
+.sorting_down {
+  .table-sorting__arrow-down {
+    display: block;
+  }
+}
+
+.input_table {
+  width: 110%;
+  border-radius: 0;
+  padding: 8px 10px;
+  border: none;
+  font-size: 14px;
+  margin: 0 -10px;
+
+  &:focus {
+    outline: none;
+  }
+}
+.table-title {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 10px 10px;
+}
+.table__empty {
+  font-size: 14px;
+  padding: 20px 30px 18px 30px;
+  letter-spacing: 0.03em;
+}
+
+
+.app-table__container_journal-scroll::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background-color: #4e4e4e;
+  border-radius: 10px;
+}
+.app-table__container_journal-scroll::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: #636363;
+  height: 5px;
+  border-radius: 10px;
+}
+.app-table__container_journal-scroll::-webkit-scrollbar-track {
+  /*background-color: rgb(24, 24, 27);*/
+  background-color: #e5e5e5;
+  cursor: pointer;
+
+}
+.app-table__container_journal-scroll::-webkit-scrollbar {
+  //width: 6px;
+
+  height: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  //height: 90%;
+  background-color: #181819;
+
+}

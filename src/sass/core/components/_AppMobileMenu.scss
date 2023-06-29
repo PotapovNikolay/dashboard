@@ -1,0 +1,71 @@
+.mobile-menu__header{
+
+    background-color: #2e3442;
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    padding: 1.5rem 0.5rem;
+    z-index: 10011;
+    button{
+        position: absolute;
+        right: 0.5rem;
+        background-color: rgba(0,0,0,0);
+        border: 0 solid;
+        cursor: pointer;
+    }
+    height: 2rem;
+
+    -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.44);
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.44);
+
+}
+.mobile-menu__menu{
+
+    position: absolute;
+    left: 0;
+
+    bottom:0;
+    top:0;
+    width: 70%;
+    background-color: #2e3442;
+    z-index: 10020;
+    animation: myAnim 0.3s ease-in-out 0s 1 normal forwards;
+
+}
+
+.mobile-menu__menu{
+
+    padding: 0.5rem;
+    position: absolute;
+    left: 0;
+    width: 70%;
+    background-color: #2e3442;
+    min-height: calc(100vh - 5rem);
+    z-index: 10020;
+    color:white;
+    animation: myAnim 0.3s ease-in-out 0s 1 normal forwards;
+
+    button{
+        position: absolute;
+        right: 0.5rem;
+        background-color: rgba(0,0,0,0);
+        border: 0 solid;
+        cursor: pointer;
+    }
+
+}
+
+@keyframes myAnim {
+    0%{
+        transform: translateX(-8rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}

@@ -1,0 +1,36 @@
+.breadcrumbs {
+  background: #fff;
+  padding: 15px 30px;
+  margin: 0 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+  border-radius: 5px;
+}
+.list-style {
+  list-style: none;
+}
+.breadcrumbs__item {
+  display: inline-block;
+}
+.breadcrumbs__item::after {
+  content: "";
+  //background: url("../../../website/assets/images/icons/arrows/cal_next.svg") no-repeat;
+  background-size: 100%;
+  width: 6px;
+  height: 14px;
+  margin: 0 5px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  left: 2px;
+}
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+.breadcrumbs__link {
+  color: #555;
+  font-size: 12px;
+  text-decoration: none;
+}
+.breadcrumbs__item:last-child .breadcrumbs__link {
+  cursor: default;
+}
